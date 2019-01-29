@@ -1,0 +1,92 @@
+main {
+    border: 2px solid red;
+    min-height: 80vh;
+    background-color: rgba(180,20,20,0.05);
+    /* display: block; // this is the default */
+    /* display: none; */
+
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+
+    /* display: grid */
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-areas: "nav nav nav"
+                             "aside art footer"
+                             ;*/
+    
+}
+
+main > * {
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(30, 30,200,0.1);
+    /* display: inline; */
+    /* flex: 1 200px; */
+    /*  */
+}
+
+h1 > span {
+    background-color: yellow;
+    /* padding: 60px; */
+    border: 2px solid magenta;
+    /* display: block; */
+}
+
+nav {
+    /* grid-area: nav; */
+}
+
+aside {
+    /* align-self: flex-end ; */
+    /* order: -1; */
+    /* grid-area: aside; */
+
+}
+
+article {
+    /* flex: 2 400px; */
+    /* grid-area: art; */
+    
+}
+
+
+footer.outer {
+    /* grid-area: footer; */
+}
+
+
+/* Not really relevant for today but I want you to see how I modified content with pure CSS */
+/* p.normal:nth-of-type(2)::after { */
+/*     content: ' -    Mwahahahahhaha'; */
+/*     background-color: purple; */
+             
+/* } */
+
+
+/* put our media queries here */
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "nav nav nav" "aside art art" "footer footer footer";
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "nav" "art" "aside" "footer";
+        
+    }
+}
