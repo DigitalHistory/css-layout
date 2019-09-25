@@ -41,7 +41,7 @@ const classes = {
                 expl: `In this example, the <em>main</em> element has been assigned a <em>display</em> value of 
                 <strong>flex</strong>. Now the positioning of <strong>main</strong>'s children is determined 
                 by the flex algorithm instead.  Here, we set the <strong>flex-direction</strong> is set to <strong>column</strong>,
-                which causes flex elements to stack up vertically.`},
+                which causes flex elements to stack up horizontally, but also backwards.`},
   grid: {class: "make_grid", text:"Grid",
          expl: `In this example, the <em>main</em> element has been assigned a <em>display</em> value of 
                 <strong>grid</strong>. Now the positioning of <strong>main</strong>'s children is determined 

@@ -3,7 +3,7 @@ html {
 
 body {
   display: grid;
-  grid-template-rows: 180px 3fr 1fr;
+  grid-template-rows: 180px 2fr 1fr;
   height: 90vh;
   box-sizing: border-box; }
   body > header, body > footer {
@@ -15,7 +15,6 @@ body {
     body > header #layoutinfo, body > footer #layoutinfo {
       color: #a032a0;
       border: 2px #a032a0 solid;
-      padding: 1em;
       max-width: 80vw;
       margin: auto; }
 
