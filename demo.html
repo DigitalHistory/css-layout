@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSS exercise</title>
+        <link href="./demo.css" rel="stylesheet"/>
+        <script
+	    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+	    crossorigin="anonymous"></script>
+        <script src="./demo.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Currently Demoing <span id="layoutinfo">default</span> layout</h1>
+            <p>
+                
+            </p>
+        </header>
+        <main>
+            <nav>CSS Layout Exercise for <a href="https://digitalhistory.github.io">Digital History (HIS393)</a>. </nav>
+            <aside>Sidebar ("Aside")</aside>
+            <article>
+                <header>
+                    <h2>main > article > header > h2. I also contain a <span>span element</span>, which displays inline by default.  </h2>                
+                </header>
+                <section class="content">
+                    <h2>main > article > section.content > h2</h2>
+                    <p class="normal">Here is a normal paragraph</p>
+                    <p class="normal">Here is another normal paragraph</p>
+ 
+                    <ul id="mainlist">
+                        <li class="red">List item 1 -- class of red</li>
+                        <li>List item 2</li>
+                        <li id="special">List item 3 -- id of special</li>
+                        <li>List item 6</li>
+                    </ul>
+                    <div class="child-and-grand">
+                        <p>just filling space but you can style me if you like. </p>
+                        <div>
+                            <p>bla bla bla <strong>bla</strong> bla bla. </p>
+                        </div>
+                    </div>
+                </section>
+                <footer class="inner">main > article > footer</footer>
+            </article>
+            <footer class="outer">main > footer</footer>
+        </main>
+        <footer>
+            <p>
+                <button onclick="toggleMainDisplayClasses('Block')">Default Block Layout</button>
+                <button onclick="toggleMainDisplayClasses('flex')">Flex Layout</button>
+                <button onclick="toggleMainDisplayClasses('flexreverse')">Flex with Row-Reverse Layout</button>
+                <button onclick="toggleMainDisplayClasses('flexcolumn')">Flex with Column Layout</button>
+                <button onclick="toggleMainDisplayClasses('grid')">Grid Layout</button>
+            </p>
+            <p id="explanation"></p>
+        </footer>
+    </body>
+</html>
