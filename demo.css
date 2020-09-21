@@ -34,9 +34,6 @@ main > *, main article > * {
   padding: 5px;
   background-color: rgba(30, 30, 200, 0.1);
   transition: all 5s ease;
-  /* display: inline; */
-  /* flex: 1 200px; */
-  /*  */
 }
 main h1 > span {
   background-color: yellow;
@@ -88,19 +85,6 @@ main.make_grid > article > header {
 main.make_grid > footer {
   grid-area: footer;
 }
-/* display: block; // this is the default */
-/* display: none; */
-/* display: flex; */
-/* flex-direction: column; */
-/* align-items: stretch; */
-/* align-items: flex-end; */
-/* align-items: flex-start; */
-/* display: grid */
-/* grid-template-columns: 300px 300px 300px; */
-/* grid-template-columns: 1fr 3fr 1fr; */
-/* grid-template-areas: "nav nav nav"
-                             "aside art footer"
-                             ;*/
 /* Not really relevant for today but I want you to see how I modified content with pure CSS */
 /* p.normal:nth-of-type(2)::after { */
 /*     content: ' -    Mwahahahahhaha'; */
