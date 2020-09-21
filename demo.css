@@ -1,59 +1,71 @@
 html {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 body {
   display: grid;
-  grid-template-rows: 180px 2fr 1fr;
-  height: 90vh;
-  box-sizing: border-box; }
-  body > header, body > footer {
-    background-color: rgba(60, 110, 60, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 1rem; }
-    body > header #layoutinfo, body > footer #layoutinfo {
-      color: #a032a0;
-      border: 2px #a032a0 solid;
-      max-width: 80vw;
-      margin: auto; }
+  grid-template-rows: 180px 3fr 1fr;
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+body > header, body > footer {
+  background-color: rgba(60, 110, 60, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1rem;
+}
+body > header #layoutinfo, body > footer #layoutinfo {
+  color: #a032a0;
+  border: 2px #a032a0 solid;
+  max-width: 80vw;
+  margin: auto;
+}
 
 main {
   border: 2px solid red;
   min-height: 80vh;
   background-color: rgba(180, 20, 20, 0.05);
-  transition: all 5s ease; }
-  main > *, main article > * {
-    border: 2px solid blue;
-    margin: 5px;
-    padding: 5px;
-    background-color: rgba(30, 30, 200, 0.1);
-    transition: all 5s ease;
-    /* display: inline; */
-    /* flex: 1 200px; */
-    /*  */ }
-  main h1 > span {
-    background-color: yellow;
-    border: 2px solid magenta; }
-  main > nav {
-    background-color: rgba(40, 40, 100, 0.3); }
-  main > aside {
-    background-color: rgba(100, 70, 120, 0.3); }
-  main > footer {
-    background-color: rgba(40, 40, 100, 0.3); }
+  transition: all 5s ease;
+}
+main > *, main article > * {
+  border: 2px solid blue;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(30, 30, 200, 0.1);
+  transition: all 5s ease;
+  /* display: inline; */
+  /* flex: 1 200px; */
+  /*  */
+}
+main h1 > span {
+  background-color: yellow;
+  border: 2px solid magenta;
+}
+main > nav {
+  background-color: rgba(40, 40, 100, 0.3);
+}
+main > aside {
+  background-color: rgba(100, 70, 120, 0.3);
+}
+main > footer {
+  background-color: rgba(40, 40, 100, 0.3);
+}
 
 main.make_flex_column {
   display: flex;
   flex-direction: column;
-  align-items: stretch; }
+  align-items: stretch;
+}
 
 main.make_flex_reverse {
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+}
 
 main.make_flex {
-  display: flex; }
-
+  display: flex;
+}
 main.make_grid {
   display: grid;
   grid-template-areas: "nav nav nav" "aside article article" "footer footer footer";
