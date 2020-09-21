@@ -70,23 +70,24 @@ footer.outer {
 
 
 /* put our media queries here */
+/* set up grid responsive queries */
 
 @media screen and (max-width: 800px) {
     main {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-        grid-template-areas: "nav nav nav" "aside art art" "footer footer footer";
+        /* display: grid; */
+        /* grid-template-rows: auto; */
+        /* grid-template-columns: auto; */
+        /* grid-template-areas: "nav nav nav" "aside art art" "footer footer footer"; */
         
     }
 }
 
 @media screen and (max-width: 500px) {
     main {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-        grid-template-areas: "nav" "art" "aside" "footer";
+        /* display: grid; */
+        /* grid-template-rows: auto; */
+        /* grid-template-columns: auto; */
+        /* grid-template-areas: "nav" "art" "aside" "footer"; */
         
     }
 }
